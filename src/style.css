@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "AdiHaus";
   src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf")
@@ -106,6 +107,14 @@ input[type="submit"] {
   display: none;
 }
 
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+  #athlete-mobile {
+    background-position: center;
+  }
+}
+
+/* Estilos para telas de computador */
 @media only screen and (min-width: 768px) {
   body {
     background: url("https://img.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148808256.jpg?w=2000");
@@ -115,21 +124,25 @@ input[type="submit"] {
   .all-container {
     width: 50%;
   }
+
   .text-content-container {
     text-align: left;
   }
+
   #athlete-mobile {
     display: none;
   }
+
   #logo {
     margin: 30px 30px 100px;
     display: block;
   }
+
   .desktop-image {
     display: block;
     width: 50%;
     background: url("https://images.unsplash.com/photo-1615064779799-df1bfcc66ed0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
-    background-size:cover;
+    background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
     background-position: 0rem;    
   }
